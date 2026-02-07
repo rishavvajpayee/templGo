@@ -1,0 +1,9 @@
+package main
+
+templ Hello(name string) {
+	<div>
+		<h1>Hello, { name }</h1>
+		<button hx-post="/clicked" hx-target="#result">Click Me</button>
+		<div id="result">Result</div>
+	</div>
+}
