@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"net/http"
 
 	"github.com/a-h/templ"
@@ -13,5 +14,6 @@ func main() {
 		w.Write([]byte("<span>HTMX Swap Successful!</span>"))
 	})
 
-	http.ListenAndServe(":8080", nil)
+	fmt.Println("Server listening on :8085")
+	http.ListenAndServe(":8085", nil)
 }
